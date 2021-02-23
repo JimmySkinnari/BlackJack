@@ -1,7 +1,9 @@
 # BlackJack
 
 
-Beskrivning
+##Beskrivning
+
+
 Uppgiften handlar om att skapa en webblösning där det går att spela ett kortspel. Spelet
 måste visa ett antal spelkort i bilder på skärmen och det skall finnas en spelare som spelar
 mot datorn. Använd bildfilerna på olika kort som finns bifogat. Krav för lösningen:
