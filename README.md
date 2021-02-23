@@ -1,7 +1,6 @@
 # BlackJack
 
 
-##Beskrivning
 
 
 Uppgiften handlar om att skapa en webblösning där det går att spela ett kortspel. Spelet
