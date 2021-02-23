@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+
+
+
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+        </script>
+     
+    </head>
+
+    <body>
+
+        <div class ="wrapper">
+
+            <div class="header">
+                <label id="user">Logged in as: </label>
+                <br>
+                <label id="user-balance">Balance: </label>
+            </div>
+            <label id="winner"></label>
+
+            <div id="gameDiv">
+
+                <p id ="dealer-score"></p>
+                <div id ="dealer-cards">
+                </div>
+
+                <p id ="player-score"></p>
+                <div id ="player-cards">   
+                </div>
+                
+            </div>
+
+            <div id="gameButtons">
+                <br>
+                <button id="hitButton">Hit</button>
+                <br>
+                <button id="standButton">Stand</button>
+            </div>
+
+            <div id="main">
+                <button id="10" class ="bet">Bet 10</button>
+                <br>
+                <button id="50" class ="bet">Bet 50</button>
+                <br>
+                <button id="100" class ="bet">Bet 100</button>
+                <br>
+                <button id="add-money">Get more money!</button>
+            </div>
+
+        </div>
+
+        <script src="js/services/UserService.js"></script>  
+        <script src="js/gameInit.js"></script> 
+        <script src="js/classes/User.js"></script>
+        <script src="js/classes/Game.js"></script>
+        <script src="js/classes/Deck.js"></script>
+        <script src="js/classes/Dealer.js"></script>
+        <script src="js/classes/Player.js"></script>
+          
+    </body>
+</html>

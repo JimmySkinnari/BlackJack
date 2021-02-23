@@ -1,0 +1,93 @@
+
+$primaryBtn:  rgb(43, 41, 41); 
+$primaryBg: rgb(39, 85, 45);
+$primaryFont: rgb(251, 255, 251);
+$primaryHeaderColor: rgb(12, 43, 6);
+
+
+
+.header{
+    background-color: $primaryHeaderColor;
+    width: 100%;
+    color: $primaryFont;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #user{
+        margin-top: 20px;
+    }
+}
+
+
+
+#search-value{
+    margin-left: 50px; width:300px; margin-top: 5px;
+}
+
+.row{margin-top: 5px;}
+
+#main-page{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+    margin-top: 400px;
+
+
+}
+
+button{
+    margin-top: 25px;
+    background-color: $primaryBtn;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+
+    transition: .1s ease-in-out 0s;
+}
+
+button:hover{
+
+    transform: scale(1.25);
+
+}
+
+   
+
+
+body{
+
+    background-color: $primaryBg;
+   
+}
+
+.poker{
+
+    font-family: 'Rye', cursive;
+    font-size:  100px;
+}
+
+.wrapper{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $primaryFont;
+}
+
+#gameButtons{
+
+    display: flex;
+    flex-direction:row;
+
+}
+
+#main{
+
+    margin-top: 100px;
+    display: flex;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>node test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script
+                src="https://code.jquery.com/jquery-3.5.1.js"
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
+        
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="col" id="main-page">
+                <h1 class ="poker">- BLACK JACK -</h1>
+              <button id="login-button" type="button" class="btn btn-dark" data-toggle="modal" data-target="#recipe-new-modal">- LOGIN / SIGN UP -</button>           
+          </div> 
+        </div>
+          
+        <div class="modal" id="recipe-new-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">- LOGIN / SIGN UP -</h5>
+                    <button type="button" id="close-button"class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipe-title" class="col-form-label">Username</label>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password-lbl" class="col-form-label">Password</label>                   
+                            <input type="password" class="form-control" id="password">                    
+                        </div>
+                    <div id="hide">              
+                </div>
+                    </form>
+                </div>
+                <div class="modal-footer" id="modal-footer"> 
+                    <button type="button" id="sign-up" class="btn btn-dark">Sign up</button>                 
+                    <button type="button" id="login" class="btn btn-dark">Login</button> 
+                </div>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="modal" id="sign-up-new-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                <button type="button" id="close-button"class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipe-title" class="col-form-label">Username</label>
+                        <input type="text" class="form-control" id="username-new">
+                    </div>
+                    <div class="form-group">
+                        <label for="password-lbl" class="col-form-label">Password</label>                   
+                        <input type="password" class="form-control" id="password-new">                    
+                    </div>
+                    <div class="form-group">
+                        <label for="password-lbl" class="col-form-label">Repeate Password</label>                   
+                        <input type="password" class="form-control" id="password-repeate">                    
+                    </div>
+                    <div id="hide">              
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer" id="modal-footer">                 
+                <button type="button" id="register" class="btn btn-dark">Register</button> 
+            </div>
+            </div>
+            </div>
+        </div> 
+
+        <script src="js/classes/User.js"></script>
+        <script src="js/services/UserService.js"></script>  
+        <script src="js/init.js"></script> 
+
+    </body>
+</html>
