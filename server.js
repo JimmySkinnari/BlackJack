@@ -1,14 +1,11 @@
 
 
-//webserver, skapar en ny instans av våran webbserver
 const express = require('express');
 const app = express();
 
 
-//Ladda in modul f�r sql-server�tkomst, (liklnande en .NET data provider, tex SqlQlient)
 const sql = require('msnodesqlv8');
 
-//För att parsa skickade data från client body('post')
 const bodyParser = require('body-parser')
 const path = require('path')
 
@@ -18,17 +15,12 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
-// Hitta index.html(startfil) som ligger i public mappen
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-// Allt åvan deklarerar alla moduler och konfigurerar dom
-//-----------------------------------------------------------------
 
-//Connection sträng (anges som vanligt)
 const connString = "server=.;Database=Blackjack;Trusted_Connection=Yes;Driver={SQL Server Native Client 11.0}";
 
-// Ett webbapi som körs
 app.post("/AddUser/", (request) => {
 
     let username = request.body.Username;
@@ -124,8 +116,6 @@ app.post("/AddUser/", (request) => {
 
 
 
-
-//Skapa webservern på en bestämd port 
 app.listen(8080)
 console.log("lyssnar på port 8080")
 
