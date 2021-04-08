@@ -4,8 +4,6 @@ $primaryBg: rgb(39, 85, 45);
 $primaryFont: rgb(251, 255, 251);
 $primaryHeaderColor: rgb(12, 43, 6);
 
-
-
 .header{
     background-color: $primaryHeaderColor;
     width: 100%;
@@ -20,8 +18,6 @@ $primaryHeaderColor: rgb(12, 43, 6);
     }
 }
 
-
-
 #search-value{
     margin-left: 50px; width:300px; margin-top: 5px;
 }
@@ -35,8 +31,6 @@ $primaryHeaderColor: rgb(12, 43, 6);
     align-items: center;
     max-height: 100vh;
     margin-top: 400px;
-
-
 }
 
 button{
@@ -46,33 +40,23 @@ button{
     width: 100px;
     height: 50px;
     border-radius: 10px;
-
     transition: .1s ease-in-out 0s;
 }
 
 button:hover{
-
     transform: scale(1.25);
-
 }
 
-   
-
-
 body{
-
-    background-color: $primaryBg;
-   
+    background-color: $primaryBg;  
 }
 
 .poker{
-
     font-family: 'Rye', cursive;
     font-size:  100px;
 }
 
 .wrapper{
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,14 +64,11 @@ body{
 }
 
 #gameButtons{
-
     display: flex;
     flex-direction:row;
-
 }
 
 #main{
-
     margin-top: 100px;
     display: flex;
 }
