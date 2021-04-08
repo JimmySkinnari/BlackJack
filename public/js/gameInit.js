@@ -1,13 +1,9 @@
 
 window.onload = () => {
-
     
     UpdateUserLabels();
     var game = new Game();
-
    
-    
-    
     $(".bet").click(function (){
 
         let loggedInUser1 = JSON.parse(localStorage.getItem("LoggedInUser"));
@@ -33,27 +29,20 @@ window.onload = () => {
 
     });
 
-
     $("#add-money").click( () => {
 
         let loggedInUser1 = JSON.parse(localStorage.getItem("LoggedInUser"));
         AddMoney(loggedInUser1, 500.00);
         location.reload();
-
     });
 
-
-    $("#hitButton").click( () => {
-        
+    $("#hitButton").click( () => {       
         game.Hit();
-
     });
 
 
     $("#standButton").click( () => {
-
         game.Stand();
-
     });
 
     $("#hitButton").hide();
@@ -61,21 +50,16 @@ window.onload = () => {
 }
 
 function GetGameUI(){
-
-
     $("#hitButton").show();
     $("#standButton").show();
-
 }
 
 function MakeBet(user, amount){
-
+    
     if(user.Balance < amount){
-
         alert('You dont have enough money')
     }
     else{
-
         let username = user.Username;
         let password = user.Password;
         let user1 = new User(username, password);
@@ -86,10 +70,8 @@ function MakeBet(user, amount){
     }
 }
 
-
 function AddMoney(user, amount){
-
-
+    
     let username = user.Username;
     let password = user.Password;
     let user1 = new User(username, password);
@@ -99,13 +81,11 @@ function AddMoney(user, amount){
     user1.InsertMoney(amount);
 
     localStorage.setItem("LoggedInUser", JSON.stringify(user1));
-
 }
 
 function UpdateUserLabels(){
 
     let loggedInUser = JSON.parse(localStorage.getItem("LoggedInUser"));
-
     document.querySelector("#user").innerText = "Logged in as: " + loggedInUser.Username;
     document.querySelector("#user-balance").innerText = "Balance: " + loggedInUser.Balance;
 }
