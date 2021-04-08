@@ -3,13 +3,9 @@ class UserService
 {
     AddNew(user)
     {       
-
-        $.post("/CheckUsername/", user , (result) => { 
-                     
-            if(result[0] == null){
-                
-                $.post("/AddUser/", user, () => {
-            
+        $.post("/CheckUsername/", user , (result) => {                   
+            if(result[0] == null){                
+                $.post("/AddUser/", user, () => {           
                 }); 
                 alert('user registrated');
             }
@@ -17,39 +13,28 @@ class UserService
                 
                alert('Username is taken');                
             }
-        });  
-        
+        });          
     }
 
     Login(user){
-
+        
         $.post("/Login/", user, (result) => { 
                      
-            if(result[0] != null){
-           
-                user.Balance = result[0].Balance;
-                
+            if(result[0] != null){           
+                user.Balance = result[0].Balance;              
                 localStorage.setItem("LoggedInUser", JSON.stringify(user));
-                console.log(result);
-                alert("login succeeded");
-                
-               window.location.href = 'game.html';
-               
+                alert("login succeeded");                
+                window.location.href = 'game.html';               
             }
-            else{
-                
-                alert("Password or username is incorrect.");
-                
+            else{                
+                alert("Password or username is incorrect.");                
             }
             
-        }) 
-    
+        })    
     }
 
     UpdateBalance(user){
-
-        $.post("/UpdateBalance/", user, () => { 
-            
+        $.post("/UpdateBalance/", user, () => {             
         });
     }
 }
